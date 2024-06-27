@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PS BQ _ 3.O</title>
+</head>
+
+<body style="margin: 2% 10% 0% 10% ;">
+
+  <center>
+    <h1 style="color: rgb(2, 255, 255); background-color: black; padding:1%; margin-bottom:10px;border-radius:10px;">
+      Practice Statements In BanoQabil 3.O</h1>
+    <hr>
+    <p
+      style="background-color: rgb(255, 247, 0); text-shadow: 1px -1px 1px rgb(0, 0, 0); padding:10px; border-radius:50px 50px 0px 0px; font-size:22px; ">
+      Teacher : Mr. Adil Ahmed Shekhani</p>
+    <p
+      style="background-color: rgb(0, 255,  26); text-shadow: 1px -1px 1px rgb(0, 0, 0); padding:10px; border-radius:0px 0px 50px 50px; font-size:22px; ">
+      Student : Bushra_Jan _40125</p>
+    <hr />
+    <div style="background-color: #ffffff;">
+       <img src="./js.jpeg" alt="img" title="UI-img" width="100%" style="border-radius: 10px;"></div>
+    <hr><br>
+
+    <h1>Now start from Switch Statement </h1>
+    <!-- <script>
+      var user = prompt("Enter User Name: ");
+      switch (user) {
+        case "bushra":
+        document.write("<br><h3>Welcome back Bushra ... </h3>");
+        console.log("Welcome back Bushra...");
+        break;
+        case "ali":
+        document.write("<br><h3>Hello Ail (new user) </h3>");
+        console.log("Hello Ail (new user)");
+        break;
+        default:
+        document.write("<br><h3>My coder  name is Bushrajan...</h3>");
+        console.log("My default coder name is Bushrajan... ");
+        break;
+        }
+      </script> -->
+    <hr><br><br>
+
+    <h1> Ternary Operator </h1>
+    <!-- <script>
+      var user = prompt("Enter User Course Name: ");
+      var result = (user == "react.js") ? "Favourite Course : React.js" : "Favourite Course : JavaScript";
+      document.write("<br><h3>" + result + "</h3>");
+    </script> -->
+    <hr><br><br>
+
+    <h1> Handling events in the DOM </h1>
+    <button id="btn"
+      style="font-size:larger; padding:15px;  color:aqua; background-color:black;  width:220px;  border: 10px solid aqua; border-radius: 15px; ">
+      >> Click me << </button>
+        <p id="dummy result div"></p>
+        <script>
+          var btn = document.getElementById("btn");
+          btn.addEventListener("click", function () {
+            document.getElementById("dummy result div").innerHTML = "<h2> Hello I am event Button <br> Made by Bushrajan... </h2>";
+          });
+
+          btn.addEventListener("keyup", function (keyboardkeypress) {
+            console.log("Key-pressed-By-Keyboard: " + keyboardkeypress.key);
+          });
+        </script>
+        <hr>
+        <br><br>
+
+        <h1> SetTimeOut (For Delay) </h1>
+        <!-- <script>
+          const getTime = new Date()
+          const hrs = getTime.getHours()
+          const min = getTime.getMinutes()
+          const sec = getTime.getSeconds()
+          setTimeout(() => {
+            console.log(`Current time is : ${hrs} :${min} `);
+            }, 2000)
+          </script> -->
+        <hr>
+        <br><br>
+
+        <h1> Text Expand (Read More Para / Read Less Para)</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing sit amet, consectetur sit amet, consectetur
+          adipisicing adipisicing elit.</p><br>
+        <a id="link" href="Javascript:void(0)" onclick="ReadTextByclicking_button()"
+          style="font-size:larger; padding:10px;  color:rgb(13, 255, 0); background-color:black; border: 10px solid rgb(98, 255, 0); border-radius: 15px;">Read
+          more Paragraph </a>
+        <script>
+          var readmore = document.getElementById("readmore");
+          var readless = document.getElementById("readless");
+
+          function ReadTextByclicking_button() {
+            var shortpara = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Rem corrupti ipsam culpa, molestias neque dignissimos nemo iste labore similique cumque velit officia? Corrupti fugit fugiat distinctio nisi laboriosam! Exercitationem, quia.";
+            var longpara = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem corrupti ipsam culpa, molestias neque dignissimos nemo iste labore similique cumque velit officia? Corrupti fugit fugiat distinctio nisi laboriosam! Exercitationem maiores quaerat molestias, asperiores eum possimus error laboriosam eveniet ipsa deleniti? Impedit dolore dolorum provident at numquam asperiores, unde officiis tempore obcaecati libero quo, cupiditate ea maiores? Veritatis aspernatur dicta officia nulla commodi quasi, repudiandae reiciendis corrupti, amet at hic molestias ducimus optio quam quaerat? Unde rerum eos, nostrum magnam minima sit ex assumenda id perspiciatis? Cum reiciendis vel optio modi rem aliquam blanditiis quod eligendi consectetur, nihil ipsam eaque nulla, debitis soluta nobis, accusantium id officiis libero consequatur? Nam, sunt. Consectetur perspiciatis esse sequi officiis adipisci, commodi optio alias sed nobis excepturi nisi est laboriosam possimus facilis voluptate <br> asperiores consequatur quia ullam ducimus quo! Cumque repellat exercitationem assumenda inventore aliquid odio ad cum magni vel ab? Autem, voluptatum tenetur quidem vitae asperiores pariatur odit, nam saepe adipisci minima ratione dolore, optio doloribus laborum! Nobis, voluptas! Cupiditate totam ducimus sequi dolor neque illo repellendus praesentium dignissimos officia, voluptatum, dicta  fugit, aperiam excepturi facilis non ullam fuga ab! Natus ab fuga distinctio dolore officia corporis sapiente voluptas consequuntur? Ut numquam ducimus nobis?`";
+            var longpara = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem corrupti ipsam culpa, molestias neque dignissimos nemo iste labore similique cumque velit officia? Corrupti fugit fugiat distinctio nisi laboriosam! Exercitationem maiores quaerat molestias, asperiores eum possimus error laboriosam eveniet ipsa deleniti? Impedit dolore dolorum provident at numquam asperiores, unde officiis tempore obcaecati libero quo, cupiditate ea maiores? Veritatis aspernatur dicta officia nulla commodi quasi, repudiandae reiciendis corrupti, amet at hic molestias ducimus optio quam quaerat? Unde rerum eos, nostrum magnam minima sit ex assumenda id perspiciatis? Cum reiciendis vel optio modi rem aliquam blanditiis quod eligendi consectetur, nihil ipsam eaque nulla, debitis soluta nobis, accusantium id officiis libero consequatur? Nam, sunt. Consectetur perspiciatis esse sequi officiis adipisci, commodi optio alias sed nobis excepturi nisi est laboriosam possimus facilis voluptate <br><br>  asperiores consequatur quia ullam ducimus quo! Cumque repellat exercitationem assumenda inventore aliquid odio ad cum magni vel ab? Autem, voluptatum tenetur quidem vitae asperiores pariatur odit, nam saepe adipisci minima ratione dolore, optio doloribus laborum! Nobis, voluptas! Cupiditate totam ducimus sequi dolor neque illo repellendus praesentium dignissimos officia, voluptatum, dicta <br><br> fugit, aperiam excepturi facilis non ullam fuga ab! Natus ab fuga distinctio dolore officia corporis sapiente voluptas consequuntur? Ut numquam ducimus nobis fugit, aperiam excepturi facilis non ullam fuga ab! Natus ab fuga distinctio dolore officia corporis sapiente  <br><br>   voluptas consequuntur? Ut numquam ducimus nobis?`";
+
+            var para = document.getElementById("para");
+            var link = document.getElementById("link");
+
+            if (link.innerHTML === "Read more Paragraph") {
+              para.innerHTML = longpara;
+              link.innerHTML = "Read less Paragraph ";
+            } else {
+              para.innerHTML = shortpara;
+              link.innerHTML = "Read more Paragraph";
+            }
+          }
+        </script>
+        <br> <br> <br>
+        <hr>
+
+        <h1>Promise </h1>
+        <script>
+          document.write("<h4>Result in console press:f12 please</h4>");
+          const promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+              const data = {
+                name: "Bushrajan",
+                age: 20,
+                gender: "female",
+                country: "Paksitan"
+              }
+              resolve(data);
+            }, 2000);
+          });
+          promise.then((data) => {
+            console.log(data);
+          });
+        </script>
+        <hr>
+        <br><br>
+
+        <h1>Callback Function</h1>
+        <script>
+          function mul(x, y, result) {
+            document.write(`<h3>The Multiplication of ${x} * ${y} = ${x * y} </h3>`);
+            result();
+          }
+
+          function laststatement() {
+            document.write(`<hr><h1><br>Result of all the functions practice you have seen now the task is complete.....</h1>
+              <h2>Thank you for your time</h2>`);
+          }
+
+          mul(20, 10, laststatement);
+
+        </script>
+
+        <br><br><br><br><br><br><br><br>
+        <hr>
+      <h4>copyright<sup>&copy;</sup> 2024_Bushrajan _ 40125 BQ-3.O</h4>
+  </center>
+
+</body>
+</html>
